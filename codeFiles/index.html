@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Search App</title>
+    <link rel="icon" href="Zeeshan.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Book Search App</h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search for books...">
+            <select id="criteria">
+                <option value="title">Title</option>
+                <option value="author">Author</option>
+                <option value="year">Year</option>
+            </select>
+            <button id="searchButton">Search</button>
+        </div>
+    </header>
+
+    <main>
+        <div id="bookList"></div>
+        <div class="add-book-container">
+            <h2>Add a New Book</h2>
+            <form id="addBookForm">
+                <input type="text" id="newBookTitle" placeholder="Book Title" required>
+                <input type="text" id="newBookAuthor" placeholder="Author" required>
+                <input type="number" id="newBookYear" placeholder="Year" required>
+                <button type="button" onclick="addBook()">Add Book</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <h2>You can search a book by:</h2>
+        <ul>
+            <li>Book name</li>
+            <li>Author</li>
+            <li>Year</li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
